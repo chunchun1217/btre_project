@@ -8,6 +8,4 @@ class ListingAdmin(admin.ModelAdmin):
     list_editable = ('is_published', 'price')
     list_per_page = 15
     search_fields = ('title', 'price', 'realtor__name')
-
-
 admin.site.register(Listing, ListingAdmin)
